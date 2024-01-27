@@ -10,7 +10,7 @@ async def cmd_start(message: types.Message):
     if message.chat.type == types.ChatType.PRIVATE:
         try:
             await add_user(user_id=message.from_user.id, user_menotion=message.from_user.id)
-            await bot.send_message(chat_id=message.from_user.id, text=f'[{message.from_user.full_name}](tg://user?id={message.from_user.id}) *Тема на форуме - https://zelenka.guru/threads/5481538/*', parse_mode=types.ParseMode.MARKDOWN)
+            await bot.send_message(chat_id=message.from_user.id, text=f'', parse_mode=types.ParseMode.MARKDOWN)
         except:
             pass
         text_start=await get_text(type='text_text', text_type='wellcome')
