@@ -1,0 +1,2 @@
+token='6698363965:AAHyYCEYRERwchyYgnQL7BCRNw9QPPNC-ek'
+admin_id=int(5602778747)
